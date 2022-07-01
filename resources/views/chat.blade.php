@@ -1,9 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-<body>
-<h2>Chatroom</h2>
-</body>
-</html>
+@extends('layouts.app')
+
+@section('content')
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <chat :user="{{ Auth::user() }}"/>
+        </div>
+    </div>
+</div>
+@endsection
